@@ -1,0 +1,14 @@
+[Unit]
+Description=Azeroth Moments screenshot publisher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/share/azeroth-moments/venv/bin/azeroth-moments start
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
