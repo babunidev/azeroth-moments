@@ -17,6 +17,7 @@ from azeroth_moments.config import Config
 from azeroth_moments.db import Database, Publication, Screenshot
 from azeroth_moments.images.transform import prepare_instagram_assets
 from azeroth_moments.meta_api_gate import InstagramApiGate
+from azeroth_moments.notify import notify_published
 from azeroth_moments.publishers.base import PublishResult
 from azeroth_moments.publishers.instagram import InstagramPublisher
 from azeroth_moments.videos.transform import prepare_instagram_video_assets
@@ -364,6 +365,13 @@ class InstagramRecovery:
                 next_retry_at=0.0,
             )
             self.clear_intent(shot.id)
+            notify_published(
+                "instagram",
+                filename=shot.path,
+                media_type=shot.media_type or "image",
+                enabled=self.config.desktop_notifications,
+                dry_run=self.config.dry_run,
+            )
             return RecoveryReport(
                 **base,
                 action="mark_published",
@@ -709,6 +717,13 @@ class InstagramRecovery:
                 next_retry_at=0.0,
             )
             self.clear_intent(shot.id)
+            notify_published(
+                "instagram",
+                filename=shot.path,
+                media_type=shot.media_type or "image",
+                enabled=self.config.desktop_notifications,
+                dry_run=self.config.dry_run,
+            )
             return RecoveryReport(
                 **base,
                 action="published",
@@ -804,6 +819,13 @@ class InstagramRecovery:
                 increment_attempts=True,
             )
             self.clear_intent(shot.id)
+            notify_published(
+                "instagram",
+                filename=shot.path,
+                media_type=media_type,
+                enabled=self.config.desktop_notifications,
+                dry_run=self.config.dry_run,
+            )
             report_base = {**base, "container_ids": new_ids}
             return RecoveryReport(
                 **report_base,

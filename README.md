@@ -100,6 +100,12 @@ All clips share the same duration/sync window, target 9:16, and are staged to R2
 
 Ambiguous Instagram API responses are reconciled and never auto-switched to another method.
 
+## Desktop notifications
+
+On successful Discord or Instagram publishes, Azeroth Moments shows a desktop
+notification with the filename (via `notify-send` / libnotify). Disable with
+`DESKTOP_NOTIFICATIONS=false` in `.env`.
+
 ## Captions
 
 Default caption (Discord and Instagram):

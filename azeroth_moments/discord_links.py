@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from azeroth_moments.config import Config
 from azeroth_moments.db import Database, Publication, Screenshot
 from azeroth_moments.meta_api_gate import InstagramApiGate
+from azeroth_moments.notify import notify_published
 from azeroth_moments.publishers.discord import DiscordPublisher
 from azeroth_moments.publishers.instagram import InstagramPublisher
 from azeroth_moments.retry import next_retry_timestamp
@@ -239,6 +240,13 @@ class InstagramDiscordLinkAnnouncer:
             shot.id,
             permalink,
             sent.remote_id,
+        )
+        notify_published(
+            "discord",
+            filename=shot.path,
+            media_type=shot.media_type or "video",
+            enabled=self.config.desktop_notifications,
+            dry_run=self.config.dry_run,
         )
         return AnnounceResult(
             screenshot_id=shot.id,

@@ -82,6 +82,7 @@ class Config:
     instagram_video_target_aspect_ratio: str
     instagram_video_max_duration_seconds: float
     instagram_video_transcode_preset: str
+    desktop_notifications: bool
     dry_run: bool
     log_level: str
 
@@ -208,6 +209,7 @@ def load_config(explicit_env: Path | None = None, dry_run: bool | None = None) -
         instagram_video_transcode_preset=_env_str(
             "INSTAGRAM_VIDEO_TRANSCODE_PRESET", "balanced"
         ),
+        desktop_notifications=_env_bool("DESKTOP_NOTIFICATIONS", True),
         dry_run=_env_bool("DRY_RUN", False) if dry_run is None else dry_run,
         log_level=_env_str("LOG_LEVEL", "INFO"),
     )

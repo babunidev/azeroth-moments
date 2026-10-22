@@ -55,6 +55,7 @@ def make_config(tmp_path: Path | None = None, **overrides) -> Config:
         instagram_video_target_aspect_ratio="9:16",
         instagram_video_max_duration_seconds=0.0,
         instagram_video_transcode_preset="balanced",
+        desktop_notifications=False,
         dry_run=False,
         log_level="INFO",
     )

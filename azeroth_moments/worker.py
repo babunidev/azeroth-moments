@@ -13,6 +13,7 @@ from azeroth_moments.auth_instagram import InstagramAuth
 from azeroth_moments.config import Config
 from azeroth_moments.db import Database
 from azeroth_moments.images.transform import prepare_instagram_assets
+from azeroth_moments.notify import notify_published
 from azeroth_moments.paths import pid_path
 from azeroth_moments.publishers.discord import DiscordPublisher
 from azeroth_moments.publishers.instagram import InstagramPublisher
@@ -230,6 +231,13 @@ class Worker:
                     last_error="",
                     container_ids=container_ids,
                 )
+                notify_published(
+                    "instagram",
+                    filename=shot.path,
+                    media_type=getattr(shot, "media_type", "image") or "image",
+                    enabled=self.config.desktop_notifications,
+                    dry_run=self.config.dry_run,
+                )
                 # Do not count reconcile-as-published toward rate limit spam
                 self._announce_video_link_if_needed(shot.id)
             elif getattr(result, "auth_error", False) or (
@@ -437,6 +445,14 @@ class Worker:
             if not self.config.dry_run:
                 self.rate_limiter.record(platform)
             log.info("Published %s screenshot_id=%s remote_id=%s", platform, screenshot_id, remote_id)
+            shot = self.db.get_screenshot(screenshot_id)
+            notify_published(
+                platform,
+                filename=shot.path if shot else str(screenshot_id),
+                media_type=media_type,
+                enabled=self.config.desktop_notifications,
+                dry_run=self.config.dry_run,
+            )
             if platform == "instagram" and media_type == "video" and remote_id:
                 self._announce_video_link_if_needed(screenshot_id)
             return

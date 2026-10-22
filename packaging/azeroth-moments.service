@@ -9,6 +9,8 @@ ExecStart=%h/.local/share/azeroth-moments/venv/bin/azeroth-moments start
 Restart=on-failure
 RestartSec=5
 Environment=PYTHONUNBUFFERED=1
+# Session bus so notify-send reaches the KDE/GNOME notification daemon
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/bus
 
 [Install]
 WantedBy=default.target
