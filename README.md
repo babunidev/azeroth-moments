@@ -151,3 +151,11 @@ Specs: [docs/BRIEF.md](docs/BRIEF.md), [docs/BRIEF_ADDENDUM.md](docs/BRIEF_ADDEN
 - **Instagram API rate limit (HTTP 403 code 4):** a shared cooldown is stored in the DB and survives restarts; Discord keeps publishing. Check `status` → `instagram.api_cooldown`, then `unknown` / `inspect 10`.
 - **Instagram unknown:** ambiguous Meta outcome; containers are preserved. Recover with `retry <screenshot_id> --platform instagram` (queues through cooldowns; publishes a FINISHED parent once; expired containers need `--confirm-rebuild`).
 - **Logs:** `~/.local/state/azeroth-moments/azeroth-moments.log`
+
+## Development documentation
+
+- [Concept](CONCEPT.md) · [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md)
+- [Architecture](docs/ARCHITECTURE.md) · [Design evidence](docs/DECISIONS.md) · [Development journal](docs/DEVLOG.md)
+- [AI collaborator rules](AGENTS.md)
+
+The journal distinguishes source-based reconstruction, author direction, AI assistance, and independently verified behavior.
