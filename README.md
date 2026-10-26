@@ -1,5 +1,7 @@
 # Azeroth Moments
 
+**Author:** Babuni.dev
+
 Automatically share World of Warcraft screenshots **and videos** to Discord and Instagram on Nobara Linux.
 
 Drop a file into `~/Pictures/Azeroth Moments` — Discord receives the **exact original file**, and Instagram receives an adaptively prepared post (landscape images → geometry-driven carousel; landscape videos → preview-first portrait carousel).
