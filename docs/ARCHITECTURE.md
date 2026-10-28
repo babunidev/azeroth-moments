@@ -9,3 +9,11 @@
 - Local persistence and status/inspection commands help distinguish queued, published, failed and ambiguous remote outcomes. Service files support systemd operation on Nobara/Fedora.
 
 Platform secrets belong outside Git. This is a static audit, not proof of successful live publishing.
+
+## Implementation trace — 2026-10-28
+
+The original [developer brief](BRIEF.md) specifies file-stability checks, Pillow validation, SHA-256 deduplication, SQLite tracking and a publishing queue. The [image addendum](BRIEF_ADDENDUM.md) makes geometry classification and landscape portrait-panel preparation explicit. The [video addendum](VIDEO_ADDENDUM.md) extends file detection to MP4/MOV/MKV and distinguishes preserved Discord video uploads from H.264/AAC Instagram derivatives prepared with FFmpeg.
+
+`pyproject.toml` declares package version **1.0.0**, Python 3.11+, the `azeroth-moments` CLI, and dependencies including watchdog, Pillow, httpx, python-dotenv and boto3; the README separately requires FFmpeg and ffprobe for video. Instagram requires externally retrievable staged media, so the implementation uses S3-compatible object storage rather than a local file URL.
+
+**Operational boundary:** a source-level queue, reconciliation logic and systemd unit do not prove that an installed service is running or platforms have accepted a post. Discord failure from an oversized original is isolated from Instagram. Retrying an ambiguous remote outcome without reconciliation risks duplication; these behaviors remain subjects for controlled end-to-end tests.
