@@ -159,3 +159,9 @@ Specs: [docs/BRIEF.md](docs/BRIEF.md), [docs/BRIEF_ADDENDUM.md](docs/BRIEF_ADDEN
 - [AI collaborator rules](AGENTS.md)
 
 The journal distinguishes source-based reconstruction, author direction, AI assistance, and independently verified behavior.
+
+## Documentation audit #37 — 28 October 2026
+
+The project history is anchored in three original directions: [capture-to-publish](docs/BRIEF.md), [adaptive image geometry](docs/BRIEF_ADDENDUM.md), and [video support](docs/VIDEO_ADDENDUM.md). These briefs preserve Babuni.dev's intended frictionless workflow, unchanged Discord originals, and Instagram-specific derivatives rather than replacing the history with later implementation assumptions.
+
+Portfolio references: [visual/interaction design](docs/DESIGN.md), [content and provenance](docs/CONTENT.md), [architecture](docs/ARCHITECTURE.md), [decisions](docs/DECISIONS.md), [development journal](docs/DEVLOG.md), and [AI collaboration](docs/AI_COLLABORATION.md). Version 1.0.0 is declared in package metadata; no local service or remote publication was executed during this documentation-only audit.
