@@ -1,6 +1,6 @@
 # Azeroth Moments
 
-**Author:** Babuni.dev
+**Creative:** Babuni
 
 Automatically share World of Warcraft screenshots **and videos** to Discord and Instagram on Nobara Linux.
 
@@ -160,7 +160,7 @@ Specs: [docs/BRIEF.md](docs/BRIEF.md), [docs/BRIEF_ADDENDUM.md](docs/BRIEF_ADDEN
 
 The journal distinguishes source-based reconstruction, author direction, AI assistance, and independently verified behavior.
 
-## Documentation audit #37 — 28 October 2026
+## Documentation review — 28 October 2026
 
 The project history is anchored in three original directions: [capture-to-publish](docs/BRIEF.md), [adaptive image geometry](docs/BRIEF_ADDENDUM.md), and [video support](docs/VIDEO_ADDENDUM.md). These briefs preserve Babuni.dev's intended frictionless workflow, unchanged Discord originals, and Instagram-specific derivatives rather than replacing the history with later implementation assumptions.
 
