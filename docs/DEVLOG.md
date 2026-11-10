@@ -1,6 +1,6 @@
 # Azeroth Moments — development journal
 
-**Author:** Babuni.dev
+**Creative:** Babuni
 
 ## Retrospective reconstruction — 2026-10-26
 
