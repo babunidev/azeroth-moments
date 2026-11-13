@@ -1,5 +1,7 @@
 # Azeroth Moments — authorship and collaboration
 
+Follow [the documentation standard](DOCUMENTATION.md) for first-person author voice throughout project documentation, factual changelogs, and naming the AI tool and verified model for each contribution.
+
 **Author:** Babuni.dev
 
 Original gameplay media, publishing goals, platform choices and aesthetic rules belong to Babuni.dev. AI-assisted implementation may include Python services, image/video conversion, tests and publication safeguards. Document proposed changes, implemented code, author acceptance, and confirmed publication separately.
