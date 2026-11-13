@@ -15,3 +15,8 @@ Earlier development belongs to the existing briefs, commit history, and verifiab
 - Added visual/media design and content/provenance guides.
 - Expanded the project overview, roadmap, technical architecture, decision context, development journal, collaboration and agent rules using the existing brief sequence.
 - No Python runtime code, service configuration, capture files, publishing state or API credentials were changed. No end-to-end publication was executed.
+
+## 2026-11-13 — License and rights
+
+- Established MIT for original publishing software and updated repository documentation to explain the permission boundary.
+- Preserved third-party authorship and external assets' separate terms. No application behavior or runtime verification is claimed.
