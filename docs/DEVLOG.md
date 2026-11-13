@@ -17,3 +17,7 @@ Babuni.dev's earliest brief describes a deliberately small action: take a World 
 A later brief records the artist's actual working habit: screenshots are often selected as irregular regions rather than fixed fullscreen frames. That led to geometry-aware carousel slicing, overlap and padding rather than a universal crop. The third brief adds gameplay video, retaining untouched originals for Discord and placing an overall preview before synchronized Left/Middle/Right portrait panels on Instagram. The new video form is a creative presentation rule, not simply a format conversion.
 
 **Babuni.dev direction:** frictionless publication with source fidelity and careful visual presentation. **AI contribution:** source-backed engineering choices and this written historical synthesis, not ownership of captured gameplay or the original idea. **Iteration:** screenshot-only workflow, variable-size image support, then video. **Implementation in this audit:** Markdown guides and links only. **Verification:** README, original briefs and package metadata reviewed; no watcher process, actual Discord upload, Instagram post, image/video render or R2 account was tested.
+
+## 2026-11-13 — Giving the repository clear permissions
+
+Public source alone did not explain what others could reuse, so I approved MIT for the original media-publishing software. AI assistance added the license and brought the project notes into agreement, without changing how the application runs. Other people's content retains its own terms.
