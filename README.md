@@ -165,3 +165,7 @@ The journal distinguishes source-based reconstruction, author direction, AI assi
 The project history is anchored in three original directions: [capture-to-publish](docs/BRIEF.md), [adaptive image geometry](docs/BRIEF_ADDENDUM.md), and [video support](docs/VIDEO_ADDENDUM.md). These briefs preserve Babuni.dev's intended frictionless workflow, unchanged Discord originals, and Instagram-specific derivatives rather than replacing the history with later implementation assumptions.
 
 Portfolio references: [visual/interaction design](docs/DESIGN.md), [content and provenance](docs/CONTENT.md), [architecture](docs/ARCHITECTURE.md), [decisions](docs/DECISIONS.md), [development journal](docs/DEVLOG.md), and [AI collaboration](docs/AI_COLLABORATION.md). Version 1.0.0 is declared in package metadata; no local service or remote publication was executed during this documentation-only audit.
+
+## License
+
+Original publishing-tool code is licensed under [MIT](LICENSE). Photos, recordings and videos processed by the application remain the property of their respective rights holders.
