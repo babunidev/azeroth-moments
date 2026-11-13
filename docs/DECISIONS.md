@@ -21,3 +21,7 @@ These reflect source briefs and README. The precise alternatives debated in unav
 - **Scope boundary:** Additional destinations were mentioned as an architectural possibility in the initial brief, not implemented services or approved imminent milestones.
 
 These are existing brief/source decisions. The documentation audit approved no new creative or technical behavior.
+
+## 2026-11-13 — Licensing decision
+
+To make the reuse terms explicit, I approved MIT for original publishing software, excluding processed user media. This applies only to material for which the relevant rights can be granted; third-party contributors keep their own credits and licenses. AI assistance committed the license notice and updated project-facing documentation. This was a legal/documentation change, not a runtime feature or test.
