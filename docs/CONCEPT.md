@@ -6,7 +6,7 @@ Azeroth Moments turns gameplay screenshots and video into automatically publishe
 
 Discord should preserve the exact original; Instagram requires a format-aware presentation that does not simply throw away the composition. Wide images become geometry-driven carousel panels, while landscape videos can become a preview-first multi-panel experience.
 
-**Original direction:** [Initial brief](docs/BRIEF.md), [adaptive-image addendum](docs/BRIEF_ADDENDUM.md) and [video addendum](docs/VIDEO_ADDENDUM.md).
+**Original direction:** [Initial brief](BRIEF.md), [adaptive-image addendum](BRIEF_ADDENDUM.md) and [video addendum](VIDEO_ADDENDUM.md).
 
 ## How the creative idea developed
 
