@@ -1,23 +1,28 @@
-# Azeroth Moments — authorship and collaboration
+# Human–AI collaboration
 
-Follow [the documentation standard](DOCUMENTATION.md) for first-person author voice throughout project documentation, factual changelogs, and naming the AI tool and verified model for each contribution.
+## How I work with AI
 
-## Sharing moments from the game
+Every project here begins with something I want to see in a game, on a screen or in a story. The ideas, the direction and the decisions are mine, and so are the playtests and the checks on my own devices. AI helps me get there. In my early projects that meant asking ChatGPT for Lua in a conversation, copying the changes into local files and trying them in the game. Today coding agents work directly in the repositories: they research, write code and documentation and run tests, while I decide what to build, try it out and say what works and what doesn't.
 
-The gameplay media, publishing goals and aesthetic choices came from me. The briefs trace my move from unobtrusive screenshot sharing to responsive landscape framing and then video.
+Two rules hold this record together. Work is credited to whoever did it: the story is told in my voice, but when AI wrote code or a document, the record says so and names the tool and, where it is known, the model. And a plan is not a result: proposed, accepted, built, tested and published stay separate, and an automated test by an AI is not the same as my own check in the game or on my phone.
 
-Do not publish webhook URLs, OAuth tokens, secrets, raw private account logs or inaccessible chat transcripts. Use the original [briefs](BRIEF.md) and source commits as public evidence.
+## Who did what
 
-## Documentation audit #37 — 2026-10-28
+| Who | Role | Model as recorded |
+| --- | --- | --- |
+| **Babuni** | Creative: ideas, direction, decisions, corrections, playtesting and device checks | — |
+| **Codex** | Coding agent in the repository: research, code, documentation and tests | GPT-6 |
+| **Claude Code** | Coding agent in the repository: research, code, documentation and tests | Claude Opus 5.5 |
+| **Cursor** | Coding agent in the repository: research, code, documentation and tests | Not recorded |
+| **Earlier AI help** | Work that older entries describe only as “AI” | Tool and model not recorded |
 
-**User direction:** Continue the numbered repository audit and preserve the project's original human-led design. The three dated/ordered briefs document my progression from nearly invisible screenshot sharing to responsive landscape framing and then video publication.
+The journal and the changelog name the tool for each piece of AI work. A model that was not recorded stays unrecorded rather than guessed.
 
-**AI contribution:** Read the existing publishing briefs, README and package metadata and create supplementary media-design and content-provenance guides. Code and conversion logic may have AI-assisted contributions, but the original framing decisions and personal media were mine.
+## Where the details are
 
-**Creative iteration:** The adaptive-image and video addenda revise the initial screenshot scope without erasing it. Unchanged Discord originals and Instagram derivatives are intentionally different results, and an ambiguous API result is not presumed to be a successful or unsuccessful publication.
+- [Development journal](DEVLOG.md): the story of the project in my voice, including what I asked for and what AI did.
+- [Decision record](DECISIONS.md): what was decided, by whom and why.
+- [Changelog](../CHANGELOG.md): what changed and how it was checked.
+- [Documentation standard](DOCUMENTATION.md) and [AGENTS.md](../AGENTS.md): the writing and working rules for everyone who contributes, human or AI.
 
-**Verification:** Documentation changes committed; no new local image/video processing, external publishing, API calls, systemd test or account inspection was conducted. Do not publish private captures, OAuth credentials, webhook URLs or unrelated personal data.
-
-## 18 November 2026 — Collaboration record review
-
-At my request, Codex (GPT-6) revised this record for first-person voice and checked the attribution against the available repository documentation. Where an earlier AI tool or model is missing from the record, its identity remains unconfirmed.
+The earlier, longer version of this record, as it stood on 18 November 2026, is kept in the [Git history](https://github.com/babunidev/azeroth-moments/blob/ec171eab8947bd3a35ab88eb64c9c661623d2439/docs/AI_COLLABORATION.md).
