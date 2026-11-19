@@ -71,6 +71,15 @@ Discord uploads original screenshots as attachments. Videos that fit under `DISC
 
 ## Instagram setup (Instagram Login)
 
+**Current app location (updated October 25, 2026):** Sign in to
+[Meta for Developers](https://developers.facebook.com/apps/) using the
+**Anskar Grotzschnapf Meta Developers account** to manage this project's app.
+The app is named **azerothMoments** (Instagram app name **azerothMoments-IG**;
+Instagram app ID `3192643817596007`) and connects to **@babunigaming**.
+This replaces the previous app connection. The existing Cloudflare R2 bucket
+is still used for media staging. See the [maintenance log](docs/MAINTENANCE_LOG.md)
+for the migration record.
+
 1. Convert `@babunigaming` to a Professional account if needed.
 2. Create a Meta app that supports **Instagram API with Instagram Login**.
 3. Request permissions such as `instagram_business_basic` and `instagram_business_content_publish`.
